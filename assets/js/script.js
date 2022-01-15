@@ -1,10 +1,15 @@
-const startQuizButton = document.querySelector("#start-btn");
+const startQuizButton = document.getElementById("start-btn");
+const initialInfo = document.getElementById("initial-info")
 
 startQuizButton.addEventListener("click", startQuiz);
 
 function startQuiz() {
     console.log("The quiz has begun.");
-    var secondsLabel = document.querySelector("#seconds");
+
+    startQuizButton.classList.add("hide");
+    initialInfo.classList.add("hide");
+
+    var secondsLabel = document.getElementById("seconds");
     var totalSeconds = 76;
     setInterval(setTime, 1000);
 
@@ -21,4 +26,5 @@ function startQuiz() {
             return valString;
         }
     }
+
 }
