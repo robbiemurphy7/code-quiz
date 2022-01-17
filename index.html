@@ -27,14 +27,18 @@
             <h1 class="row w-100 p-3 d-flex justify-content-center text-center">Coding Quiz Challenge</h1>
             <p class="row w-100 p-3 d-flex justify-content-center text-center">Answer the following code-related questions in the quickest time possible! Incorrect answers will result in a score/time penalty of ten points/seconds!</p>
         </div>
-        <div id="question-container" class="hide">
-            <div id="question"><h2>Question</h2></div>
-            <div id="answer-buttons" class="btn-grid text-center">
+        <div id="question-container" class="question-container hide">
+            <div id="question" class="question">
+                <h2>Question</h2>
+            </div>
+            <div id="answer-buttons" class="question-container btn-grid text-center">
                 <button class="btn">Answer 1</button>
                 <button class="btn">Answer 2</button>
                 <button class="btn">Answer 3</button>
                 <button class="btn">Answer 4</button>
             </div>
+            <p id="correct" class="correct hide">Correct!</p>
+            <p id="wrong" class="wrong hide">Wrong!</p>
         </div>
         <div class="justify-content-center text-center">
             <button id="start-btn" class="start-btn btn">Start Quiz</button>
